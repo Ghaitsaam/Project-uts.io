@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Berita - BCA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="landingstyle2.css" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-3">
+    <h1>Detail Berita - Bank Central Asia (BCA)</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/BCA-Logo-Bank-Central-Asia-1024x1024-removebg-preview.png" alt="BCA Logo" class="logo">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <article id="berita-content">
+          <!-- Konten berita akan dimuat secara dinamis oleh JavaScript -->
+        </article>
+        <div class="text-center mt-4">
+          <a href="news.html" class="btn btn-primary">Kembali ke Daftar Berita</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p>BCA berizin dan diawasi oleh Otoritas Jasa Keuangan & Bank Indonesia</p>
+      <p>Created &copy; 2025 by <a href="https://ghaitsa.asia" class="text-white">Ghaitsa</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Ambil parameter dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const beritaId = urlParams.get('berita');
+      
+      // Data berita
+      const beritaData = {
+        '1': {
+          title: 'Mulai 20 Mei 2025, Ini Daftar Harga Terbaru Sewa Safe Deposit BCA',
+          date: '01 Mei 2025',
+          image: 'img/berita1.jpg',
+          content: `
+            <h2>Mulai 20 Mei 2025, Ini Daftar Harga Terbaru Sewa Safe Deposit BCA</h2>
+            <p class="text-muted">Dipublikasikan pada 01 Mei 2025</p>
+            <img src="img/berita1.jpg" class="img-fluid mb-4" alt="Safe Deposit BCA">
+            
+            <p>PT Bank Central Asia Tbk (BCA) akan menyesuaikan tarif sewa safe deposit box (SDB) mulai 20 Mei 2025. Penyesuaian ini dilakukan seiring dengan kenaikan biaya operasional dan pemeliharaan.</p>
+            
+            <p>Berikut daftar harga terbaru sewa SDB BCA:</p>
+            
+            <ul>
+              <li>Ukuran kecil (3x5x24 inci): Rp 300.000/tahun (sebelumnya Rp 250.000)</li>
+              <li>Ukuran sedang (5x5x24 inci): Rp 500.000/tahun (sebelumnya Rp 450.000)</li>
+              <li>Ukuran besar (10x10x24 inci): Rp 1.200.000/tahun (sebelumnya Rp 1.000.000)</li>
+            </ul>
+            
+            <p>Direktur BCA Vera Eve Lim mengatakan, "Penyesuaian tarif ini tetap mempertimbangkan aspek kompetitif di industri perbankan. Kami berkomitmen untuk terus memberikan pelayanan terbaik bagi nasabah yang menggunakan fasilitas SDB."</p>
+            
+            <p>BCA juga memberikan diskon 10% bagi nasabah prioritas (BCA Prioritas) yang melakukan perpanjangan sewa sebelum 15 Mei 2025. Untuk informasi lebih lanjut, nasabah dapat menghubungi Halo BCA di 1500888 atau mengunjungi cabang BCA terdekat.</p>
+            
+            <p>Safe deposit box BCA tersedia di lebih dari 1.200 cabang di seluruh Indonesia. Fasilitas ini banyak digunakan nasabah untuk menyimpan dokumen penting, perhiasan, dan barang berharga lainnya dengan tingkat keamanan tinggi.</p>
+          `
+        },
+        '2': {
+          title: 'Pembiayaan Berkelanjutan BCA (BBCA) Tumbuh 19% di Kuartal I/2025',
+          date: '24 April 2025',
+          image: 'img/berita2.webp',
+          content: `
+            <h2>Pembiayaan Berkelanjutan BCA (BBCA) Tumbuh 19% di Kuartal I/2025</h2>
+            <p class="text-muted">Dipublikasikan pada 24 April 2025</p>
+            <img src="img/berita2.webp" class="img-fluid mb-4" alt="Pembiayaan Berkelanjutan BCA">
+            
+            <p>PT Bank Central Asia Tbk (BCA) mencatatkan pertumbuhan pembiayaan berkelanjutan sebesar 19% pada kuartal pertama 2025. Pertumbuhan ini lebih tinggi dibandingkan periode yang sama tahun sebelumnya yang sebesar 15%.</p>
+            
+            <p>Direktur Utama BCA Jahja Setiaatmadja mengungkapkan, "Komitmen BCA terhadap pembiayaan berkelanjutan terus kami tingkatkan. Hingga Maret 2025, portofolio pembiayaan berkelanjutan kami telah mencapai Rp 85 triliun."</p>
+            
+            <p>Pertumbuhan terbesar datang dari sektor:</p>
+            
+            <ul>
+              <li>Energi terbarukan (+25%)</li>
+              <li>Bangunan hijau (+22%)</li>
+              <li>Transportasi ramah lingkungan (+18%)</li>
+            </ul>
+            
+            <p>BCA juga meluncurkan beberapa produk baru terkait pembiayaan berkelanjutan:</p>
+            
+            <ol>
+              <li>Kredit Kendaraan Listrik dengan bunga khusus</li>
+              <li>Pembiayaan PLTS Atap untuk rumah tangga dan UMKM</li>
+              <li>Green Mortgage untuk properti bersertifikat hijau</li>
+            </ol>
+            
+            <p>Di samping itu, BCA terus mengurangi pembiayaan ke sektor-sektor yang memiliki dampak negatif terhadap lingkungan. Hingga kuartal I 2025, BCA telah mengalokasikan 35% dari total portofolio kreditnya untuk pembiayaan berkelanjutan, melampaui target awal sebesar 30%.</p>
+            
+            <p>"Kami berkomitmen untuk mencapai net zero emission pada 2060, sesuai dengan target pemerintah. Langkah ini sejalan dengan visi BCA untuk menjadi bank yang bertanggung jawab secara sosial dan lingkungan," tambah Jahja.</p>
+          `
+        },
+        '3': {
+          title: 'Cara Menabung Emas di BCA Syariah, Simak Syarat dan Ketentuannya',
+          date: '27 April 2025',
+          image: 'img/berita3.png',
+          content: `
+            <h2>Cara Menabung Emas di BCA Syariah, Simak Syarat dan Ketentuannya</h2>
+            <p class="text-muted">Dipublikasikan pada 27 April 2025</p>
+            <img src="img/berita3.png" class="img-fluid mb-4" alt="Tabungan Emas BCA Syariah">
+            
+            <p>BCA Syariah menawarkan produk tabungan emas yang memungkinkan nasabah menabung dalam bentuk emas digital. Produk ini disebut BCA Syariah iB Hasanah Emas dan dapat diakses melalui mobile banking BCA.</p>
+            
+            <h3>Syarat Membuka Tabungan Emas BCA Syariah:</h3>
+            <ul>
+              <li>Memiliki rekening BCA Syariah</li>
+              <li>Sudah terdaftar sebagai pengguna BCA mobile</li>
+              <li>Mengisi formulir pembukaan rekening tabungan emas</li>
+              <li>Setoran awal minimal 0,01 gram emas</li>
+            </ul>
+            
+            <h3>Cara Membuka Tabungan Emas:</h3>
+            <ol>
+              <li>Buka aplikasi BCA mobile</li>
+              <li>Pilih menu "BCA Syariah"</li>
+              <li>Pilih "iB Hasanah Emas"</li>
+              <li>Ikuti petunjuk untuk aktivasi</li>
+              <li>Lakukan setoran awal</li>
+            </ol>
+            
+            <p>Keuntungan menabung emas di BCA Syariah:</p>
+            <ul>
+              <li>Bebas biaya administrasi bulanan</li>
+              <li>Dapat dibeli mulai dari 0,01 gram</li>
+              <li>Harga mengikuti harga emas Antam</li>
+              <li>Bisa ditarik dalam bentuk fisik emas (minimal 1 gram)</li>
+              <li>Transaksi syariah dan bebas riba</li>
+            </ul>
+            
+            <p>Direktur BCA Syariah Adiwarman Azwar Karim menjelaskan, "Produk ini sangat cocok untuk masyarakat yang ingin berinvestasi emas dengan modal kecil dan aman. Emas digital yang dibeli nasabah di-backup oleh emas fisik yang disimpan di tempat aman."</p>
+            
+            <p>Untuk penarikan emas fisik, nasabah dapat mengajukan permohonan melalui aplikasi dan mengambilnya di cabang BCA Syariah terdekat. Biaya cetak emas fisik sebesar Rp 50.000 per gram.</p>
+            
+            <p>Hingga April 2025, sudah lebih dari 500.000 nasabah yang menggunakan produk tabungan emas BCA Syariah ini dengan total aset dikelola mencapai 2 ton emas.</p>
+          `
+        }
+      };
+
+      // Tampilkan berita sesuai ID
+      if (beritaId && beritaData[beritaId]) {
+        const berita = beritaData[beritaId];
+        document.title = berita.title + ' - BCA';
+        document.getElementById('berita-content').innerHTML = berita.content;
+      } else {
+        // Jika tidak ada berita yang sesuai, tampilkan pesan error
+        document.getElementById('berita-content').innerHTML = `
+          <div class="alert alert-danger">
+            <h2>Berita Tidak Ditemukan</h2>
+            <p>Maaf, berita yang Anda cari tidak tersedia. Silakan kembali ke halaman berita.</p>
+          </div>
+        `;
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
